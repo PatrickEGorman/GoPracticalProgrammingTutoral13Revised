@@ -18,7 +18,7 @@ type News struct {
 
 // created seperate get method to avoid unnecessary repetition of code
 func get(url string, client *http.Client) []byte {
-	# create request from URL trimming off any whitespace from string
+	// create request from URL trimming off any whitespace from string
 	req, _ := http.NewRequest("GET", strings.TrimSpace(url), nil)
 
 	// set request headers to generate more human like traffic (I am not a robot?!)
