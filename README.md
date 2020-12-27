@@ -14,7 +14,8 @@ Revised code for [this tutorial](https://www.youtube.com/watch?v=dySAX8VZ2TU)
    looking headings.  I ended up making it a separate method so that I could call it multiple times without rewriting a 
    bunch of duplicate code.  Definitely going to speed up that for loop for the sub sitemaps a whole lot.
    The revised script is as follows:
-   ```client := &http.Client{}
+   ```Go
+   client := &http.Client{}
 	req, _ := http.NewRequest("GET", "https://www.washingtonpost.com/news-sitemaps/index.xml", nil)
 	req.Header.Set("Connection","Keep-Alive")
 	req.Header.Set("Accept-Language","en-US")
